@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="container_card">
+      <div class="card">
+        <div class="card_front">
+          <div class="card_head">
+            <img src="images/card-logo.svg" alt="">
+          </div>
+          <div class="card_body">
+            <span class="card_number">0000 0000 0000 0000</span>
+            <div class="name_date">
+            <span class="card_name">Jane Appleseed</span>
+            <span class="card_date"><span class="month">00</span>/<span class="year">00</span></span>
+          </div>
+          </div>
+
+        </div>
+
+        <div class="card_back">
+            <span class="card_cvc">000</span>
+        </div>
+      </div>
+    </div>
+    <div class="container_form">
+      <form action="">
+        <label for="name">Cardholder Name</label>
+        <input type="text" name="name" id="name" placeholder="e.g Jane Appleseed" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+        <label for="number">Card Number</label>
+        <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <div class="labels">
+          <label for="month">Exp. date (mm/yy)</label>
+          
+          <div class="cvc_Container">
+            <label for="cvc">cvc</label>
+          </div>
+        </div>
+
+        <div class="inputs_lado">
+          <input type="text" name="month" id="month" placeholder="MM" maxlength="2">
+          <input type="text" name="year" id="year" placeholder="YY" maxlength="2">
+          <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3">
+        </div>
+
+        <input type="submit" value="Confirm" id="confirm">
+
+      </form>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
